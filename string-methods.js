@@ -12,6 +12,7 @@ console.log(word.length);
 
 const fruit = "Banaan";
 const vegetable = "Aardappel";
+if (fruit.length> vegetable.length) {console.log("true")} else console.log("false");
 
 
 
@@ -20,6 +21,8 @@ const vegetable = "Aardappel";
 //  Tip: bedenk 1 manier die voor beide woorden zou werken.
 // ---- Verwachte uitkomst voor fruit: "n"
 // ---- Verwachte uitkomst voor vegetable: "l"
+console.log(fruit.slice(-1));
+console.log(vegetable.slice(-1));
 
 
 
@@ -28,6 +31,7 @@ const vegetable = "Aardappel";
 // ---- Verwachte uitkomst: "De kat krabt de krullen van de trap"
 
 const userInput = "  De kat krabt de krullen van de trap ";
+console.log(userInput.trim());
 
 
 
@@ -35,13 +39,15 @@ const userInput = "  De kat krabt de krullen van de trap ";
 // Check of het woord "Fantastisch" in onderstaande zin voorkomt en log dit in de terminal.
 // ---- Verwachte uitkomst: true
 
-const story = "We vinden de behaalde resultaten werkelijk prachtig. Fantastisch, nietwaar?"
-
-
+const story = "We vinden de behaalde resultaten werkelijk prachtig. Fantastisch, nietwaar?";
+if (story.includes("Fantastisch")) {console.log("true")} else console.log("false");
 
 /* Opdracht 5 */
 // Knip de vraag van bovenstaande tekst (story) af, zodat alleen het eerste gedeelte overblijft en log dit in de terminal.
 // ---- Verwachte uitkomst: "We vinden de behaalde resultaten werkelijk prachtig."
+const plaats = story.indexOf("Fan");
+console.log(plaats);
+console.log(story.slice(0, plaats));
 
 
 
@@ -53,7 +59,9 @@ const story = "We vinden de behaalde resultaten werkelijk prachtig. Fantastisch,
 // ---- Verwachte uitkomst: "€35,59"
 
 const price = "$35.59";
-
+const euro = price.replace("$", "€");
+const dot = euro.replace(",",".");
+console.log(dot);
 
 
 
